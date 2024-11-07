@@ -1,0 +1,3 @@
+101 Gene 84.33 B
+102 Alice 91.00 A
+103 Fatima 75.00 C

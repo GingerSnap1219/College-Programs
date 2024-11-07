@@ -1,0 +1,15 @@
+CC = gcc
+CFLAGS = -Wall -g
+OBJ = hw6-scan.o hw6-load.o hw6-search.o hw6-free.o hw6-main.o
+TARGET = hw6
+
+all: $(TARGET)
+
+$(TARGET): $(OBJ)
+	$(CC) $(CFLAGS) -o $@ $^
+
+%.o: %.c
+	$(CC) $(CFLAGS) -c $<
+
+clean:
+	rm -f $(OBJ) $(TARGET)
